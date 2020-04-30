@@ -25,43 +25,41 @@ class App extends Component{
       if(!firebase.apps.length){
       firebase.initializeApp(databaseConfig);
       }
-      this.db = firebase.database();
+      this.db = firebase.database().ref('message');
+     // this.db.on('value', gotData, gotErr);
+    }
       
-      var ref = this.db.ref('message')
-      ref.on('value', gotData, gotErr);
-      
-      function gotData(data){
+      componentDidMount(){
+        try{
+          this.db.on('value', data =>{
+          var m = Object.values(data.val())
+          this.setState({
+              message: m
+          })
+      })
+    }catch(error){
+      console.log("error")
+      console.log(error)
+    }
+    }
+    /*  gotDat =(data)=>{
         //console.log(data.val())
         var message = data.val();
-      /*  for (let [key,value] of Object.entries(message)){
+       /* for (let [key,value] of Object.entries(message)){
           console.log(` ${value}`)
           let msg = ` ${value}`;
           //return msg;
         }*/
-        var m= Object.values(message);
+       /* var m= Object.values(message);
         console.log(m)
-
-   
+        this.setState({
+          message: m
+        })
       }
-      function gotErr(err){
+      gotErr = (err)=>{
         console.log("error")
-        console.log(err)
-      }
-
+        console.log(err)*/
       
-      
-      /*componentWillMount(){
-      setInterval(() => {
-      device.Push('getMessage');
-      var msg = device.getCurrentMessage()
-      this.setState({
-      message: msg
-      })
-      }, 5000);
-      */
-
-
-    }
 render(){
   return(
     <div className="App">
@@ -69,7 +67,7 @@ render(){
             <h2>Display</h2>      
         <div className="screen">
         
-        <div id="text">lol</div>
+        <div id="text">{this.state.message}</div>
         
         </div>
         </header>
