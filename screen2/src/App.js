@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import './App.css'
+//import logo from "../images/logo.png"
 
 
 /* Edit these lines to reflect your IoT platform config. */
@@ -61,13 +62,14 @@ class App extends Component{
         console.log("error")
         console.log(err)
         
-        <div id="text">{this.state.message}*/
+        <img alt="logo" src={logo} className = "logo"></img> */
       
 render(){
   return(
     <div className="App">
       <header className="App-header">
-            <h2>Welcome to your door-display!</h2>      
+            <h2>Welcome to your door-display!</h2> 
+                
         <div className="screen">
         <div className="door1">
         <div className="door2">
