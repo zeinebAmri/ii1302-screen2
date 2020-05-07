@@ -1,6 +1,11 @@
 .App {
   display: grid;
+  background-color: #EFEFEF;
 }
+#text{
+  text-align: center;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -10,25 +15,97 @@ h2{
   text-align: center;
 }
 .screen{
-	border: 2px solid #000;
-	background-color:#ffcccc;
-  height:600px;
-  width: 50%;
+	
+	background-color: #E8DDCB;
+  height:650px;
+  width: 1200px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-left: 400px;
-	border-radius: 5px 5px 0 0;
-	box-shadow: 10px 10px 8px #888888;
+  margin-left: auto;
+  margin-right: auto;
+	
+	
 }
 .App-header {
-  min-height: 100vh;
-  font-size: calc(10px + 2vmin);
+  color: #0A1F44;
+  font-family: "Palatino Linotype";
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.door1{
+  height: 600px;
+  width: 470px;
+  margin-top: 48px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+
+}
+.door2{
+  height: 590px;
+  width: 450px;
+  margin-top: 9px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.door3{
+  height: 500px;
+  width: 390px;
+  margin-top: 45px;
+  border-color: black;
+  border-style: double;
+  border-width: 2px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.door4{
+  height: 485px;
+  width: 375px;
+  margin-top: 5px;
+  border-color: black;
+  border-style: double;
+  border-width: 2px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.door5{
+  height: 100px;
+  width: 250px;
+  margin-top: 60px;
+  border-color: black;
+  border-style: double;
+  background-color: #EFEFEF;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: medium;
+  
+}
 
