@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import './App.css'
-//import logo from "../images/logo.png"
+import logo from "./images/logo.png"
+import blomma from "./images/blomma.png"
 
 
 /* Edit these lines to reflect your IoT platform config. */
@@ -68,16 +69,21 @@ render(){
   return(
     <div className="App">
       <header className="App-header">
-            <h2>Welcome to your door-display!</h2> 
-                
+            <h2>Welcome to your door-display!  
+        <img alt="logo" src={logo} className = "logo"></img></h2>
+            
         <div className="screen">
+        <div className="blomma1">
+        <img alt="blomma" src={blomma} className = "blomma"></img></div>
         <div className="door1">
         <div className="door2">
         <div className="door3">
+        <div id="circle"></div>
         <div className="door4">
-        <div className="door5">{this.state.message}</div>
+        <div className="door5">{this.state.message}
+      
         
-        </div></div></div></div></div>
+        </div></div></div></div></div></div>
         </header>
     </div>
 

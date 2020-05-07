@@ -51,6 +51,7 @@ h2{
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-left: 60px;
   
 
 
@@ -108,4 +109,30 @@ h2{
   font-size: medium;
   
 }
+
+#circle {
+  background: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: right;
+  margin-top: 60%;
+  margin-left: 20px;
+  
+}
+.logo{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.blomma{
+  height: 500px;
+  width: 300px;
+  margin-top: 151px;
+ 
+
+}
+
+
 
